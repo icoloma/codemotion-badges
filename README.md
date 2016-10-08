@@ -5,4 +5,4 @@ python -m SimpleHTTPServer 8000
 firefox http://localhost:8000
 ```
 
-To print, in Firefox (does not work with Chrome) print to PDF by selecting a custom page of 3.5 by 2 inches and enabling "print background". 
+To print, in Firefox (does not work with Chrome) print to PDF by selecting a custom page of 3.34 by 2.16 inches (85 * 55cm) and enabling "print background". 

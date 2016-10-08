@@ -14,8 +14,8 @@ html, body {
   background-size: cover;
   padding: 2rem 2.5rem;
   page-break-before: always;
-  width: 35rem;
-  height: 20rem;
+  width: 33.4646rem;
+  height: 21.6535rem;
   font-size: 2rem;
   border-bottom: 1px solid #fff;
   color: #fff;
@@ -24,8 +24,7 @@ html, body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  margin-top: .6em;
-  width: 13em;
+  margin-top: .6rem;
 }
 .avatar {
   width: 6rem;
@@ -37,6 +36,7 @@ html, body {
 .name {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  text-shadow: 0 0 2pt #000;
 }
 .twitter {
   font-weight: 600;
@@ -47,7 +47,7 @@ html, body {
 {
    @page
    {
-    size: 3.5in 2in;
+    size: 85mm 55mm;
     size: landscape;
   }
 }
