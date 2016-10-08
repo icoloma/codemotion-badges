@@ -37,4 +37,8 @@ fetch('https://www.koliseo.com/codemotion/codemotion-madrid/r4p/5753906952929280
   speaker.name + twitter +  '</div></div></section>'
   
   }).join('');
+})
+.catch(function(e) {
+  console.error(e.message);
+  document.getElementsByClassName('badges')[0].innerHTML = e.message;
 });
