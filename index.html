@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -7,6 +8,10 @@
 </head>
 <body>
   <div class="badges"></div>
+  <!-- Fetch polyfill -->
+  <script src="es6-promise.js"></script>
+  <script>if (!this.Promise) { this.Promise = this.ES6Promise }</script>
+  <script src="fetch.js"></script>
   <script src="badges.js"></script>
 </body>
 </html>
