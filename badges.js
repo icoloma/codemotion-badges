@@ -33,8 +33,8 @@ fetch('https://www.koliseo.com/codemotion/codemotion-madrid/r4p/5753906952929280
   });
   document.getElementsByClassName('badges')[0].innerHTML = speakerValues.map(function(speaker) {
     var twitter = !speaker.twitterAccount? '' : ('<br><div class="twitter">@' + speaker.twitterAccount + '</div>');
-    return '<section class="badge"><div class="badge-contents"><img class="avatar" src="' + speaker.avatar + '"><div class="name">' + 
-  speaker.name + twitter +  '</div></div></section>'
+    return '<section class="badge"><div class="cutting-top"></div><div class="badge-contents"><img class="avatar" src="' + speaker.avatar + '"><div class="name">' + 
+  speaker.name + twitter +  '</div></div><div class="cutting-bottom"></div></section>'
   
   }).join('');
 })

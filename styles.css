@@ -9,21 +9,55 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.cutting-top, .cutting-bottom {
+  height: 1rem;
+  position: relative;
+}
+.cutting-top::before, 
+.cutting-top::after, 
+.cutting-bottom::before,
+.cutting-bottom::after {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-color: black;
+  border-style: solid;
+  content: " ";
+  position: absolute;
+}
+.cutting-top::after, 
+.cutting-bottom::after {
+  right: 0;
+}
+.cutting-top::before {
+  border-width: 0 1px 1px 0;
+}
+.cutting-top::after {
+  border-width: 0 0 1px 1px;
+}
+.cutting-bottom::before {
+  border-width: 1px 1px 0 0;
+}
+.cutting-bottom::after {
+  border-width: 1px 0 0 1px;
+}
+
 .badge {
-  background-image: url('background.svg');
-  background-size: cover;
-  padding: 2rem 2.5rem;
   page-break-before: always;
 
   width: 41.3386rem;
   height: 58.26777rem;
-  border-bottom: 1px solid #fff;
   color: #222;
-  position: relative;
+  margin-bottom: 5px; /* screen only */
 }
 .badge-contents {
-  margin-top: 3rem;
+  background-image: url('background.svg');
+  background-size: cover;
+  padding: 2rem 2.5rem;
   text-align: left;
+  margin: 0 1rem;
+  height: 56.26777rem;
+  position: relative;
 }
 .avatar {
   width: 10rem;
@@ -31,10 +65,11 @@ html, body {
   border-radius: 50%;
   border: .4rem solid #000;
   position: absolute;
-  top: 23rem;
+  top: 22.2rem;
   right: 5rem;
 }
 .name {
+  margin-top: 3rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 3rem;
@@ -53,9 +88,10 @@ html, body {
    {
     size: 105mm 148mm;
     /*size: 85mm 55mm;*/
-    size: landscape;
+    /* size: landscape; */
   }
   .badge {
+    margin-bottom: 0;
     //background-image: url('background.png');
   }
 }
