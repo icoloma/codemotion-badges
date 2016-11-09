@@ -84,11 +84,17 @@ html, body {
 
 @media print 
 {
-   @page
-   {
+  @page {
     size: 105mm 148mm;
     /*size: 85mm 55mm;*/
     /* size: landscape; */
+  }
+  .badge {
+    width: 105mm;
+    height: 148mm;
+  }
+  .badge-contents {
+    height: 139.6mm;
   }
   .badge {
     margin-bottom: 0;
